@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="auto" content='homo'>
+    <meta charset="UTF-8">
+    <title>木毛旅行社 -订购</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/information.css">
+    <link rel="stylesheet" type="text/css" href="css/buy.css">
+</head>
+<body>
+    <header id='header'>
+        <div class='center'>
+            <h1 class="logo">木毛旅行社 -订购</h1>
+            <nav style='overflow:hidden;'>
+                <h2 class="none">网站导航</h2>
+                <ul class="link">
+                    <li><a href="index.html"> 首页</a></li>
+                    <li><a href="try.html">AI旅行规划</a></li>
+                    <li><a href="information.html" >旅行信息</a></li>
+                    <li class="active"><a href="#">订购</a></li>
+                    <li><a href="scenery.html">风景欣赏</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="headline">
+        <div class="center">
+            <hgroup>                
+                <h2>出行订购</h2>
+                <h3>特价机票，火车票</h3>
+            </hgroup>
+        </div>
+    </div>
+    <div id="containter">
+        <div class="list  airTicket">
+            <h2>机票预订</h2>
+            <hr>
+            <form class="fo" action="#" method>
+                <ul class="fo_first"><li>航程类型</li><li><a href="#">往返</a></li> <li><a><-></a><a href="buy.html">单程</a></li></ul>
+                <ul class="fo_city">
+                    <li><label for="gocity">出发城市</label></li>
+                    <li><input type="text" id="gocity" placeholder='城市名'/></li>
+                    <li class="goTime" ><label for="gotime">出发时间</label></li>
+                    <li><input type="text" id="gotime" placeholder='时间/日期'></li>
+                </ul>
+                <ul class="come_city">
+                    <li><label for="comecity">返回城市</label></li>
+                    <li><input type="text" id='comecity'  placeholder='城市名'/></li>
+                    <li class="goTime" ><label for="cometime">返回时间</label></li>
+                    <li><input type="text" id="cometime" placeholder='时间/日期'></li>
+                </ul>
+                <div class="submit">
+                    <button type="button" id="mbutton">订票</button>
+                </div>
+                <script>
+                    const button = document.getElementById("mbutton");
+                    button.addEventListener('click', function () {
+                        const goCity = document.getElementById("gocity").value;
+                        const goTime = document.getElementById("gotime").value;
+                        const comeCity = document.getElementById("comecity").value;
+                        const comeTime = document.getElementById("cometime").value;
+                        // 生成携程往返机票订票链接
+                        const url = `https://flights.ctrip.com/online/list/round-${encodeURIComponent(goCity)}-${encodeURIComponent(comeCity)}?depdate=${encodeURIComponent(goTime)}_${encodeURIComponent(comeTime)}&cabin=y_s_c_f&adult=1&child=0&infant=0`;
+                        window.location.href = url;
+                    });
+                </script>
+            </form>
+            <h2>火车票预订</h2>
+            <hr>
+            <form class="fo" action="#" method>
+                <ul class="fo_first"><li>车票类型</li><li><a href="#">单程</a></li><li><a><-></a><a href="buy copy 2.html">往返</a></li></ul>
+                <ul class="fo_city">
+                    <li><label for="gocity">出发城市</label></li>
+                    <li><input type="text" id="gocity" placeholder='城市名'/></li>
+                    <li class="goTime" ><label for="gotime">出发时间</label></li>
+                    <li><input type="text" id="gotime" placeholder='时间/日期'></li>
+                </ul>
+                <ul class="come_city">
+                    <li><label for="comecity">返回城市</label></li>
+                    <li><input type="text" id='comecity'  placeholder='城市名'/></li>
+                    <li class="goTime" ><label for="cometime">返回时间</label></li>
+                    <li><input type="text" id="cometime" placeholder='时间/日期'></li>
+                </ul>
+                <div class="submit">
+                    <button type="button" id="nbutton">订票</button>
+                </div>
+                <script>
+                    const nbutton = document.getElementById("nbutton");
+                    nbutton.addEventListener('click', function () {
+                        const goCity = document.getElementById("gocity").value;
+                        const goTime = document.getElementById("gotime").value;
+                        const comeCity = document.getElementById("comecity").value;
+                        const comeTime = document.getElementById("cometime").value;
+                        // 生成携程单程火车票订票链接
+                        const url = `https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=${encodeURIComponent(goCity)}&aStation=${encodeURIComponent(comeCity)}&dDate=${encodeURIComponent(goTime)}&rDate=${encodeURIComponent(comeTime)}&trainsType=&hubCityName=&highSpeedOnly=0`;
+                        window.location.href = url;
+                    });
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

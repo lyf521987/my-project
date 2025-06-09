@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="auto" content='homo'>
+	<meta charset="UTF-8">
+	<title>山西旅行--首页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/information.css">
+</head>
+<body>
+	<!-- 以下代码请放入前端html文件的body内 -->
+<script src="https://agi-dev-platform-web.bj.bcebos.com/ai_apaas/embed/output/embedLiteSDK.js?responseExpires=0"></script>
+<script>
+    new EmbedLiteSDK({appId: 'a32098f7-a31d-4338-8eaf-4d4468c9258d', code: 'embedgfvLbwnthJ08wlzKkIlA'});
+</script>
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">山西旅行</h1>
+			<nav style='overflow:hidden;'>
+				<h2 class="none">网站导航</h2>
+			<ul class="link">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="try.html">AI旅行规划</a></li>
+					<li><a href="information.html" >旅行信息</a></li>
+					<li><a href="buy.html">订购</a></li>
+					<li><a href="scenery.html">风景欣赏</a></li>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="ai.html">AI旅行规划</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="search">
+		<div id="mask"></div>
+
+		<div class="center">
+		</div>
+		<input class="search" id="inp" type="text" placeholder='输入您想去的地方就能生成相应的旅行规划'/>
+		<button class="button" id="button">搜索</button>
+		<script>
+			const button = document.getElementById("button");
+			button.addEventListener('click', function () {
+				window.location.href = "try.html";
+			});
+		</script>
+		<script type="text/javascript">
+			var search=document.getElementById('inp');
+			var mask=document.getElementById('mask');
+			search.onfocus=opacity;
+			search.onblur=stop;
+			function opacity(){
+				mask.style.backgroundColor='rgba(0,0,0,.4)';
+			}
+			function stop(){
+				mask.style.backgroundColor='rgba(0,0,0,0)';
+			}
+		</script>
+	</div>
+
+	<div id="containter">
+		<aside class='sidebar'>
+			<div class="sidebox recommend">
+				<h2>景点推荐</h2>
+				<div class="tag">
+					<ul>
+						<li><a href="https://www.chinajinci.com/">晋祠博物馆</a></li>
+						<li><a href="https://www.shanximuseum.com.cn/sx/index/index.html">山西博物院</a></li>
+						<li><a href="https://ylj.taiyuan.gov.cn/yqjj/20240923/30005318.html">太原植物园</a></li>
+						<li><a href="http://www.jswhbwg.com/">晋商博物馆</a></li>
+						<li><a href="https://ylj.taiyuan.gov.cn/gyjj/20230531/30045680.html">晋阳湖公园</a></li>
+						<li><a href="#">太山龙泉寺</a></li>
+						<li><a href="#">太原汾河景区</a></li>
+						<li><a href="#">太原森林公园</a></li>
+						<li><a href="#">龙山景区</a></li>
+						<li><a href="#">太原古县城</a></li>
+						<li><a href="#">五台山景区</a></li>
+						<li><a href="http://www.thsbqx.com/">八泉峡景区</a></li>
+						<li><a href="http://www.xiuronggucheng.cn/">忻州古城</a></li>
+						<li><a href="https://pingyao888.cn/#/">平遥古城</a></li>
+						<li><a href="#">宝源老醋坊</a></li>
+						<li><a href="#">王封一线天</a></li>
+						<li><a href="#">万柏林生态园</a></li>
+						<li><a href="#">地质博物馆</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebox hot">
+				<h2>热门旅游</h2>
+				<div>
+					<figure>
+						<img src="image/sidebar1.jpg" />
+						<figcaption>太原1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar2.jpg" />
+						<figcaption>大同1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar3.jpg" />
+						<figcaption>长治1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar4.jpg" />
+						<figcaption>运城1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar5.jpg" />
+						<figcaption>晋城1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar6.jpg" />
+						<figcaption>临汾1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar7.jpg" />
+						<figcaption>阳泉1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar8.jpg" />
+						<figcaption>吕梁1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image\忻州1.jpg" />
+						<figcaption>忻州1日游</figcaption>
+					</figure>
+					<figure>
+						<img src="image/sidebar10.jpg" />
+						<figcaption>晋中1日游</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="sidebox tourBox">
+				<h2>旅游百宝箱</h2>
+				<div>
+					<a href="https://trains.ctrip.com/" class="sky1">火车查询</a>
+					<a href="https://flights.ctrip.com/online/channel/domestic"  class="sky2">机票查询</a>
+					<a href="#"  class="sky3">高铁查询</a>
+					<a href="#"  class="sky4">客车查询</a>
+				</div>
+			</div>
+		</aside>
+		<div class="list">
+			<div class="infor">	
+			<ul class="left">
+				<li><a href='#'>旅游路线</a></li>
+				<li><a href='index copy.html'>热门景区</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href='#' class="checked">推荐</a></li>
+				<li><a href='#'>预算</a></li>
+			</ul>
+			</div>
+
+			<div>
+			<figure class="content">
+				<img src="image/tour6.jpg" />
+				<figcaption>
+					<header>
+						<hgroup>
+							<h2>太原三天两夜</h2>
+							<h3>晋韵千年揽胜，两日食趣畅游</h3>
+						</hgroup>
+					</header>
+					<div>
+						<ul>
+							<li><mark>交通</mark>:地铁</li>
+						</ul>
+					</div>
+					<div class="buy">
+						<div class="price"><strong>预算：0.6k </strong>  </div>
+						<div class="now"><a href='#'>立即查看</a></div>
+					</div>
+					<div class="type">晋韵食景</div>
+					
+				</figcaption>
+			</figure>
+			<figure class="content">
+				<img src="image/tour2.jpg" />
+				<figcaption>
+					<header>
+						<hgroup>
+							<h2>太原五天四夜</h2>
+							<h3>晋韵史迹寻踪，食趣山水揽胜</h3>
+						</hgroup>
+					</header>
+					<div>
+						<ul>
+							<li><mark>交通</mark>:地铁，打车</li>
+						</ul>
+					</div>
+					<div class="buy">
+						<div class="price"><strong>预算：1.2k</strong></div>
+						<div class="now"><a href='#'>立即查看</a></div>
+					</div>
+					<div class="type">史景焕章</div>
+				</figcaption>
+			</figure>
+			<figure class="content">
+				<img src="image/tour1.jpg" />
+				<figcaption>
+					<header>
+						<hgroup>
+							<h2>太原四天三夜</h2>
+							<h3>太行揽胜景，晋地品春秋</h3>
+						</hgroup>
+					</header>
+					<div>
+						<ul>
+							<li><mark>交通</mark>:地铁，打车</li>
+						</ul>
+					</div>
+					<div class="buy">
+						<div class="price"><strong>预算：1.2k</strong></div>
+						<div class="now"><a href='#'>立即查看</a></div>
+					</div>
+					<div class="type">古建晋章</div>
+				</figcaption>
+			</figure>
+			<figure class="content">
+				<img src="image/tour1.jpg" />
+				<figcaption>
+					<header>
+						<hgroup>
+							<h2>太原情侣二日游</h2>
+							<h3>华夏根脉地，古韵新山西</h3>
+						</hgroup>
+					</header>
+					<div>
+						<ul>
+							<li><mark>交通</mark>:自驾</li>
+						</ul>
+					</div>
+					<div class="buy">
+						<div class="price"><strong>预算：1.2k</strong></div>
+						<div class="now"><a href='#'>立即查看</a></div>
+					</div>
+					<div class="type">山河晋魄</div>
+				</figcaption>
+			</figure>
+			<figure class="content">
+				<img src="image/tour1.jpg" />
+				<figcaption>
+					<header>
+						<hgroup>
+							<h2>长治三天两夜</h2>
+							<h3>晋韵千年风，表里山河梦</h3>
+						</hgroup>
+					</header>
+					<div>
+						<ul>
+							<li><mark>交通</mark>:公共交通</li>
+						</ul>
+					</div>
+					<div class="buy">
+						<div class="price"><strong>预算：0.8k</strong></div>
+						<div class="now"><a href='#'>立即查看</a></div>
+					</div>
+					<div class="type">锦绣千年</div>
+				
+					
+				</figcaption>
+			</figure>
+		</div>
+		<div class="more"><a href='#'>加载更多...</a></div>
+		</div>
+		<!--<footer id='foot'>
+			<div class="top">
+				<div class="block left ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+				<div class="block center ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+				<div class="block right ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				木毛旅行社 | www.homo.com |
+			</div>
+		</footer> -->
+	
+</body>
+</html>

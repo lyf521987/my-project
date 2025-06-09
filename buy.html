@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="auto" content='homo'>
+	<meta charset="UTF-8">
+	<title>木毛旅行社 -订购</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/information.css">
+	<link rel="stylesheet" type="text/css" href="css/buy.css">
+</head>
+<body>
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">木毛旅行社 -订购</h1>
+			<nav style='overflow:hidden;'>
+				<h2 class="none">网站导航</h2>
+			<ul class="link">
+				<li><a href="index.html"> 首页</a></li>
+				<li><a href="try.html">AI旅行规划</a></li>
+				<li><a href="information.html" >旅行信息</a></li>
+				<li class="active"><a href="#">订购</a></li>
+				<li><a href="scenery.html">风景欣赏</a></li>
+				<li><a href="login.html">登录</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="headline">
+		<div class="center">
+			<hgroup>				
+				<h2>出行订购</h2>
+				<h3>特价机票，火车票</h3>
+			</hgroup>
+		</div>
+	</div>
+	<div id="containter">
+		<div class="list  airTicket">
+			<h2>机票预订</h2>/*上海到太原单程飞机4.30*/
+			<hr>
+			<form class="fo" action="#" method>
+				<ul class="fo_first"><li>航程类型</li><li><a href="#">单程</a></li><li><a><-></a><a href="buy copy.html"> 往返</a></li></ul>
+				<ul class="fo_city">
+					<li><label for="gocity">出发城市</label></li>
+					<li><input type="text" id="gocity" placeholder='城市名'/></li>
+					<li class="goTime" ><label for="gotime">出发时间</label></li>
+					<li><input type="text" id="gotime" placeholder='时间/日期'></li>
+				</ul>
+				<ul class="come_city">
+					<li><label for="comecity">返回城市</label></li>
+					<li><input type="text" id='comecity'  placeholder='城市名'/></li>
+					<li class="goTime" ><label for="cometime"></label></li>
+					
+				</ul>
+				<div class="submit">
+					<button type="button" id="mbutton">订票</button>
+		
+				</div>
+				<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							const button = document.getElementById("mbutton");
+							button.addEventListener('click', function () {
+								window.location.href = "https://flights.ctrip.com/online/list/oneway-sha-tyn?depdate=2025-05-13&cabin=y_s_c_f&adult=1&child=0&infant=0&source_module=recommend_card";
+							});
+						});
+					</script>
+				</form>
+				<h2>火车票预订</h2>/*上海到太原单程火车5.1*/
+				<hr>
+				<form class="fo" action="#" method>
+					<ul class="fo_first"><li>车票类型</li><li><a href="#">单程</a></li> <li><a><-></a></li> <li><a href="buy copy 2.html">往返</a></li></ul>
+					<ul class="fo_city">
+						<li><label for="gocity">出发城市</label></li>
+						<li><input type="text" id="gocity" placeholder='城市名'/></li>
+						<li class="goTime" ><label for="gotime">出发时间</label></li>
+						<li><input type="text" id="gotime" placeholder='时间/日期'></li>
+					</ul>
+					<ul class="come_city">
+						<li><label for="comecity">返回城市</label></li>
+						<li><input type="text" id='comecity'  placeholder='城市名'/></li>
+						<li class="goTime" ><label for="cometime"></label></li>
+						
+					</ul>
+					<div class="submit">
+						<button type="button" id="nbutton" class="button">订票</button>
+
+					</div>
+					<script>
+						const button = document.getElementById("nbutton");
+						button.addEventListener('click', function () {
+							window.location.href = "https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=%E4%B8%8A%E6%B5%B7&aStation=%E5%A4%AA%E5%8E%9F&dDate=2025-05-01&rDate=&trainsType=&hubCityName=&highSpeedOnly=0";
+						});
+					</script>
+					
+			</form>
+			<div class="new">
+				<h2>特价机票</h2>
+				<hr>
+				<ul>
+					<li>热门城市:</li>
+					<li>北京</li>
+					<li>上海</li>
+					<li>广州</li>
+					<li>深圳</li>
+					<li>成都</li>
+					<li>郑州</li>
+					<li>天津</li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐食</th>
+							<th>航班</th>
+							<th>预定</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>北京-太原</td>
+							<td>05-06</td>
+							<td class="price">¥300</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>中国国航</td>
+							<td><a href="https://flights.ctrip.com/online/list/oneway-bjs-tyn?depdate=2025-05-06&cabin=y_s_c_f&adult=1&child=0&infant=0&containstax=1" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-太原</td>
+							<td>05-03</td>
+							<td class="price">¥550</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="https://flights.ctrip.com/online/list/oneway-sha-tyn?_=1&depdate=2025-04-30&cabin=Y_S_C_F&containstax=1" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-太原</td>
+							<td>05-01</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>南方航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-太原</td>
+							<td>05-03</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>深圳航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>郑州-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>四川航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>天津-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>长沙-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>南方航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>武汉-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>南方航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>青岛-太原</td>
+							<td>10-15</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>青岛航空</td>
+							<td><a href="" class="reserve">预定</a></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+						<td colspan="7"><a href="#" class="moreair">加载更多航班...</a></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		</div>
+			<footer id='foot'>
+			<div class="top">
+				<div class="block left ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+				<div class="block center ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+				<div class="block right ">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li>中国东方航空</li>
+						<li>滴滴出行</li>
+						<li>携程旅游</li>
+						<li>去哪儿网</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				木毛旅行社 | www.homo.com |
+			</div>
+		</footer>
+</body>
+</html>

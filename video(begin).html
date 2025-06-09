@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 视频背景样式 */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* 内容容器样式，确保内容在视频之上并居中 */
+        .content-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- 视频背景 -->
+    <video class="video-background" autoplay muted loop>
+        <source src="image\首页视频.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+    </video>
+
+    <!-- 页面内容 -->
+    <div class="content-container">
+        <h1 class="text-4xl font-bold mb-4">开启梦幻山西之旅</h1>
+        <p class="text-lg">探索山西的美景，发现不一样的风土人情。</p>
+        <button class="mt-8 bg-white text-black py-2 px-4 rounded hover:bg-gray-200" id="mbutton">了解更多</button>
+    </div>
+    <script>
+        const button = document.getElementById("mbutton");
+        button.addEventListener('click', function () {
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
+    
